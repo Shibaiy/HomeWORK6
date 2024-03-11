@@ -3,7 +3,7 @@
 """
 import pytest
 
-from homework.models import Product
+from models import Product
 
 
 @pytest.fixture
@@ -19,7 +19,7 @@ class TestProducts:
 
     def test_product_check_quantity(self, product):
         # TODO напишите проверки на метод check_quantity
-        pass
+        assert product.check_quantity(1000)
 
     def test_product_buy(self, product):
         # TODO напишите проверки на метод buy
